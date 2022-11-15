@@ -1,0 +1,34 @@
+.banner {
+    height: 800px;
+    padding-top: 116px;
+    padding-left: 90px;
+    background-image: url('../../img/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom: 10px solid #000;
+}
+
+/* Banner text */
+
+.banner-text {
+    display: inline-block;
+    margin-bottom: 38px;
+    padding: 42px 44px;
+    background-color: #7C5E99;
+    box-shadow: 10px 10px 0px 0px #000000;
+
+    text-align: center;
+    text-shadow: 4px 4px #000000;
+}
+
+.banner-text .title {
+    margin-bottom: 32px;
+}
+
+/* Banner button */
+
+.banner-buttons {
+    width: 640px;
+    display: flex;
+    justify-content: space-around;
+}

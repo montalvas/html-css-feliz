@@ -3,31 +3,3 @@
 body {
     font-family: 'Fira Code', monospace;
 }
-
-/*********************** BANNER ***************************/
-
-/* .banner {
-    width: 100%;
-    height: 800px;
-    padding: 116px 91px;
-    background-image: url('/assets/img/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.banner::before {
-    content: "";
-    background-color: rgba(0, 0, 0, 50%);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-} */
-
-.banner-buttons {
-    width: 627px;
-    display: flex;
-    justify-content: space-around;
-}
