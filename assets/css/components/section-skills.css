@@ -1,0 +1,41 @@
+.skills {
+    background-color: #4C5B84;
+    height: 730px;
+    padding-top: 50px;
+    padding-inline: 240px;
+}
+
+.skills > .subtitle {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.skills-list {
+    width: 960px;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill {
+    width: 430px;
+    height: 90px;
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.skill:nth-child(4), .skill:nth-child(8) {
+    margin-bottom: 0;
+}
+
+.skill-info > .subtitle {
+    font-size: 25px;
+}
+
