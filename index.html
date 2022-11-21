@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Components -->
-    <link rel="stylesheet" href="assets/css/components/header.css">
+    <link rel="stylesheet" href="assets/css/components/main-header.css">
     <link rel="stylesheet" href="assets/css/components/section-banner.css">
     <link rel="stylesheet" href="assets/css/components/action.css">
     <link rel="stylesheet" href="assets/css/components/button.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/components/section-skills.css">
 </head>
 <body>
-    <header class="header">
+    <header class="main-header">
         <img src="assets/img/logo-site (1).png" alt="logo">
 
         <nav> <!-- navigation -->
@@ -26,153 +26,22 @@
             <a class="action" href="">Projetos</a>
             <a class="action" href="">Sobre</a>
             <a class="action" href="">Contatos</a>
-            <a class="btn action" href="">Download CV</a>
+            <a class="action btn" href="">Download CV</a>
         </nav>
     </header>
 
-    <section class="banner">
-        <div class="banner-text">
+    <section class="section-banner">
+        <div class="text">
             <h1 class="title">Montalvas</h1>
             <h2 class="subtitle">FrontEnd Developer</h2>
         </div>
 
-        <div class="banner-buttons">
+        <div class="buttons">
             <a class="action btn" href="">Download CV</a>
             <a class="action btn" href="">Contatos</a>
         </div>
     </section>
 
-    <section class="skills">
-        <h2 class="subtitle">Skills</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <svg width="81" height="90" viewBox="0 0 81 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="80.2703" height="90" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_56" transform="scale(0.030303 0.027027)"/>
-                    </pattern>
-                    <image id="image0_149_56" width="33" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAlCAYAAADMdYB5AAAAAXNSR0IArs4c6QAAAa9JREFUWIXtlz9Lw0AYxp+0paUtXRoHIeBa7OLiJAVX7dAv4Ch0cBMhH0KQLE7ufoEOWUUoOjtJPkDBwThYEjGgcZA3XK659C5J2wx9pvRy5fnx3vvnoum6HmLDqmwaAABq9PBypK/d/ODJBVC2SORRZ7cqvXf+9rOwVopIbCFIGgBQr0iqEGPi5Db5HPejZ8oJqgzXdbVSRGILQVLuE7NRb2Gt0amg3tYyQxQSiTwAhUHIKvCSB7bycWQpWSrR7/lv4vtSJOYWghSldVrrXiZ2lAdeiNbxEK3xTbRGOZHUsoEVRKLe1lDd6y/fyEiqOtiKSGpWvBon50oQK88J//aieIjmYCh8F3ghaoencYjnh+IhuqYFY+LAmDgREJnv3L/GEhKQa+m5Lrpd0wJMS2qvqGUDa+wTopYtDTEb9fBxfalk6t9d4f1sX2qv9HF8TW3Mpnb0uzkY/h8HZ+w/2lEeyI74zDnBQrGXmix3i0K+wETGgRem5gIp9u+s84Nmh4wpPzeEEKyK+FonY1ZCiDQYVaAkY948FUIGiIcSmYqMlSBkgVSNM0PwYqFUTHn9AZyvlUV3mKZMAAAAAElFTkSuQmCC"/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">HTML</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="81" height="90" viewBox="0 0 81 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="80.5263" height="90" fill="url(#pattern1)"/>
-                    <defs>
-                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_55" transform="translate(0 -0.00159488) scale(0.030303 0.0271132)"/>
-                    </pattern>
-                    <image id="image0_149_55" width="33" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAlCAYAAADMdYB5AAAAAXNSR0IArs4c6QAAAaNJREFUWIXtl0FKw0AUhv8EwaWtAW27V8SFZNNFD+AVpBZKbyAUwVuI0BuULiy5gEIP0G3oSnRRwYWNEttuXKqL+so4zkxmkqbNIv9qMpnwfzz+94ZYjuN8Y8OyNw0AAFu0+Gjert18t3cOIGuVSKKj2oH22Yfh07+9TFQihyBZAECzQtQhXzeniU2OveflmjJBnRGGoZWJSuQQpMg5YbcHwn2drJQ7PoqlQnKIJOY6AEYQqzCfTmbxIExa9PXCFe5Tiwbjd+H7TAQzhyBZtFCN7iixV/l0MkOjWsF1bW+5R5kQjWwghUoUSwW4zrbRN8bdIRterJqHO0YQqWei9zhfPwQ/kK7ux8kh+PKfufvK841q5c9zKndHv3WCfmuxrndH8PxA2BG8ZCM7FoQMKEqykQ1oZsJuD1DvjvTcfnU5fEO542ud1Q6m5wdaMGR+9/KpfZUbd4cMRmWuygOQIBOeH8DzF51DY1tkrsoCyWIf4t4fBKFjyt8bUghWq/hbJ2NWUggVjCmQyJg3V0LoAPFQMlOZsRGELpCpcWwIXiyUiSmvH395sW0rCvTpAAAAAElFTkSuQmCC"/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">CSS</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="90" height="90" fill="url(#pattern2)"/>
-                    <defs>
-                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_57" transform="scale(0.030303)"/>
-                    </pattern>
-                    <image id="image0_149_57" width="33" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAAXNSR0IArs4c6QAAANBJREFUWIXtmLENgzAQRT8RE8SR0rpiBQ+RHTIJJZOwA0OwAhUtUpQVkoJ84RhbRA5ginsNYE7yu+8TBZlS6oXEnFILAEDOm0dz3n3zy+0J4CBJiAQRCSISRCSISBCRICJBRILkyyU/Yrrx2hb+deK+x9ZJuAKBtfWSCGF3fr0DupyVbD8Tppu6H+oEx9EWQF/NZXaVAKbubZlVJEw3nu8Sdk3gKIB/BpMDNtTBmKFL7yC6xCXBjnT5LeB26j73lTeN+CQC0cbUHeKzncmvgQ9vZcEtbcMqIa8AAAAASUVORK5CYII="/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">JS</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="93" height="90" viewBox="0 0 93 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="92.4324" height="90" fill="url(#pattern4)"/>
-                    <defs>
-                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_151_3" transform="scale(0.0263158 0.027027)"/>
-                    </pattern>
-                    <image id="image0_151_3" width="38" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAlCAYAAAAuqZsAAAAABHNCSVQICAgIfAhkiAAAAhhJREFUWEfVllFOxDAMRNmKf/57LM7AsTgDx+o/JwAN0lSzE9tJmpVW8MPatT3PTtbd28vE377vPxp+HMetl34lBzW7hSnsAj3A2XhvcAiMIt/vn3f5b18fp63TU6gspzftLlgGpYQKSL8DRfEVXAkWQRHChRUue6Z+xmdwU2BXJ6PTIlwPbPNLN2tHsKiR+UfrL4NFEKtQqPkQsNEpzMQ9BMwvu9szQIxdBtPLjCPkMa7CvWbdZJs7E4z87ovuHnSildGsCwfy4lkjV/wOqoB3YNWrRIVRUI8wg9KYqkEFJNx5x3TLexFNVKgMyP2o5zU0Bs+pSY6/O1a9elzEJ0dbmyFE1YSCMpcNgGebhfJpAsx9bkcxvQabdaGdZMnwMy6CUBCv5zY13N+AKcwzP/8fsN7RcIqM8yPwo/F6bns92hv3hn9LsgIRiPvchljkgx86qsW4c8FG307S638m9iZGUYXKmmV91sawzjumk8u6U7EIuvJVUNBTKNTpvitXYCrQqHl9VzbfSjyM3vYQiYpV4v4sy4800589CPZfGhGcX1y3Hc7tbAjNxDxxxq7u0UwdxC6DZceT+UcBl8Eg5BBuj8Jo3EPA/AjdfgpYdtlX4aYmpmL4HEHpMXrMDGyzYH3sI68qwuiKqSA03vVod8EQmMHpdHQf6f5zwBEoaA6BKVzUYbQko+XM3Cje6w6DRXAjAg44kgOtX06CXJciMMmjAAAAAElFTkSuQmCC"/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">React</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="86" height="90" viewBox="0 0 86 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="85.2632" height="90" fill="url(#pattern5)"/>
-                    <defs>
-                    <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_58" transform="scale(0.0277778 0.0263158)"/>
-                    </pattern>
-                    <image id="image0_149_58" width="36" height="38" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAYAAACsyDmTAAAAAXNSR0IArs4c6QAAAY1JREFUWIW92M3RwiAQBuCXb7x6kRI8eHNSQoqxhVSRFiwmJWS8ebAEvFhAPHyzDsEVFtiwJyc/8LiwhARQCGvtYq1dNNoytRDuuHOuuN2iG0NIP3YAgGmYq2FZN6QgGjDRhdKMpM5LYNELciEaMPZELaQGtjqgDSmBfX74GG2IBEYo42O2hqRgzjljfEwrCAejvnc1jQB8Ng+nPc6X4+rY7frA8/5KtlsM4oKQXBAwNQpqIB8TdupnLDU1/rRAvzAA8Ly/MA0zbtfHB9UMFAvJHFIHxf498J/BJkPmd9KPHfqxw+G0z25HtcqmYV5lKCx9yTqnCvI75dYiyZNAHURBlcWBYqWvNodo3sRCMmRNy14S6qBYZUmqTn0OnS/HrwdpOMFpxd4U5Jd8WF1hxFZs9XWIK3cKyRZEfci4cs+JnXPOWGsXP+WpBkseCVywW1g6yW3yKfxUh0NSko3kJp9DcbAwcjFZr0G5sBxM8YuiFNb8VboWttnHhlxYs88xubASSBXoF6wGohqaHz3fCbUYb5PDhsIAAAAASUVORK5CYII="/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">NodeJS</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="90" height="90" fill="url(#pattern6)"/>
-                    <defs>
-                    <pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_61" transform="scale(0.025641)"/>
-                    </pattern>
-                    <image id="image0_149_61" width="39" height="39" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAAXNSR0IArs4c6QAAAepJREFUWIXtmD1LA0EQht87QlBBEdKKrUWqtDZamGAn5LekEosrQip/i2AnmkKbtFYWtpL2ICSQSBC02nOzmd2d2fXOD3yr+9iZfW52d3ZvEkSq0Wi8297leZ7E+A4ydgHZFAJKGlCd53meUM8ft3eL69Zsgp3Lw+J+2huRkDb/XjhOVHQgUyagC9QHuHKjwKjOW7PJ2vNsMcf129LamQ3SBa8DFhcuMApUKgrIB5hKwbLFXAwGAK83L9426gMUTyIBUyorckoqgqm4lwr1DxcqMVyZC8JUqpYtd5K78ppLy+GY1U5PJ6LIhaxSqmPf+5U851O2mEeD6QDcIa7ZYEKHj6PlcFwMc/1kDxun+2Q7MnJlgplyzcW/lUqq1O+DO6vVq+YglQKfeUWli2xzq3IQKgd++7CaRyn9JJyaD1X0JOe7smSN3FftCBzZtrUVOD163UEfzU67VKhmp41pb4TuoE++t/4a6gZX5xfeTg6Oj4r75/sHPN3eOW0o/85fwxBA21dzbWxgVjguoAuMY+MCAxwLQhnoznXH3Pmot5OAAYxCDhXBWHHAAGaVSa+fxEJywQBBCcws8EggzXnHLYext6/YQmCIn6jioXS1Sj8wOBocQMn8ohQ1VC7AWDAgEg74gQVrU9war1QfDCAX5UC6Ij4AAAAASUVORK5CYII="/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">TDD</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="90" height="54" viewBox="0 0 90 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="90" height="54" fill="url(#pattern7)"/>
-                    <defs>
-                    <pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_151_1" transform="scale(0.02 0.0333333)"/>
-                    </pattern>
-                    <image id="image0_151_1" width="50" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAeCAYAAABuUU38AAAABHNCSVQICAgIfAhkiAAAAUFJREFUWEfVlmEOwyAIhddmd1jiUXalnWdX2lFMdootNGFBClacJdJ/tRb5fPhkuQx4UkofGibnvAwIawrRvSBPXlvVC6oLhEPcnq+C4/24F+8eMGYQhODJa4pQqDOBTCBWCITzgGkG6YXwgmkC+ReCw0CJ8XOGc3rL76rV9pnjGgSsSb9ZoA4VGaUGVwXeJcPodTx3kFalrQaxtgb2niepVcthWhBaerUzhXAqCPzcEqC2SyO+oTJHuYiuRX+ySjwieS0G5KU52e6wj3YpLSnrOB5+DaQorVkhKLRWYj9FIkDU7pgNJAIEVUW6Y1TXstaw53xqQCjCGk0N3DDupiEVkdQPDUIvyxV9mTuCRD3zWGhF6MaGBqFVtIFELy/Iv+i1Ilkx772K0oqijGRMu+4XSk1rzGZzLdoJiyARYHg7/wWy+5oVMI7rNQAAAABJRU5ErkJggg=="/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">Rest API</h3>
-                    <progress></progress>
-                </div>
-            </div>
-
-            <div class="skill">
-                <svg width="90" height="54" viewBox="0 0 90 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="90" height="54" fill="url(#pattern8)"/>
-                    <defs>
-                    <pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_149_62" transform="scale(0.0285714 0.047619)"/>
-                    </pattern>
-                    <image id="image0_149_62" width="35" height="21" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAVCAYAAADM+lfpAAAAAXNSR0IArs4c6QAAAWVJREFUSImtlq9uwzAQxj9HLRq0ykv7BgUZHiss2psM902GBseKF7A3KB2vDg4VpGD6vOsp9jmKT4rknM/3/fwnzgUAiDGOMCYiwfqm4rwxOdO5OC6UBHRyD2QOUG7yK768fPap43wYsomm4ug7HwbEGMcSEEG2pz0A4OftO/k7bxaeaTi2c6toQWx7MUwOzgJNgVhbDDO1pRaoBMJtEpHQZGVqgDwQoOE2lYBqQJrC5ICeXp+rQJrDWKDh40/relm7IACwso5WQHZFrpc1ft+/siCAWRnOxDMvbnvaY7O7Pfj64+jeQwmGAp6QF6cPK4H64792CajpmZn6arg12nJACYaz2OxuKWmMceRDMR3ngfCw1txDABC0wyZksrl9ul9EUmWg/2M0gopIeIDJJc4J1YDQVwPU2UFayAMp9dvPl++l8qSzwSVB7We89pUutByQbs8uLa2YjV9S6bkVWY0QY5fWwHf+OPw7JqcOxQAAAABJRU5ErkJggg=="/>
-                    </defs>
-                </svg>
-                <div class="skill-info">
-                    <h3 class="subtitle">UX</h3>
-                    <progress></progress>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </body>
 </html>

@@ -1,4 +1,4 @@
-.banner {
+.section-banner {
     height: 800px;
     padding-top: 116px;
     padding-left: 90px;
@@ -10,7 +10,7 @@
 
 /* Banner text */
 
-.banner-text {
+.section-banner > .text {
     display: inline-block;
     margin-bottom: 38px;
     padding: 42px 44px;
@@ -21,13 +21,11 @@
     text-shadow: 4px 4px #000000;
 }
 
-.banner-text .title {
+.text > .title {
     margin-bottom: 32px;
 }
 
-/* Banner button */
-
-.banner-buttons {
+.section-banner > .buttons {
     width: 640px;
     display: flex;
     justify-content: space-around;
