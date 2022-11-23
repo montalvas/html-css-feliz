@@ -1,0 +1,10 @@
+.skill-bar {
+    border: 5px solid black;
+    background-color: #FFF;
+    height: 40px;
+}
+
+.skill-bar::-webkit-progress-bar,
+.skill-bar::-moz-progress-bar {
+    background-color: #62C370;
+}

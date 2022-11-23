@@ -1,0 +1,24 @@
+.section-skills {
+    background-color: #4C5B84;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 10px solid #62C370;
+}
+
+.skill-tech {
+
+    font-size: 25px;
+    color: #FFF;
+    font-family: 'Press Start 2P', cursive;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.skill-tech > .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
