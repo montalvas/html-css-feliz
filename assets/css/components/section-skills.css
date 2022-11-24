@@ -5,8 +5,21 @@
     border-bottom: 10px solid #62C370;
 }
 
-.skill-tech {
+.section-skills > .main-title.-second {
+    margin-bottom: 60px;
+}
 
+.section-skills > .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-tech {
+    margin-bottom: 38px;
     font-size: 25px;
     color: #FFF;
     font-family: 'Press Start 2P', cursive;
@@ -14,6 +27,10 @@
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.skill-tech > .icon {
+    width: 90px;
 }
 
 .skill-tech > .content {
