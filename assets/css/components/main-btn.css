@@ -1,4 +1,4 @@
-.btn {
+.main-btn {
     display: inline-block;
     background-color: #62C370; 
     padding: 18px 20px;
@@ -7,7 +7,7 @@
     transition: transform 100ms linear;
 }
 
-.btn:hover {
+.main-btn:hover {
     background-color: #6ce27d;
     transform: scale(1.05);
 }
