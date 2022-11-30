@@ -1,0 +1,9 @@
+.section-model.-about > .text {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-weight: light;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: left;
+    color: #FFF;
+}
