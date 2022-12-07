@@ -1,8 +1,39 @@
+.section-model.-about .carousel {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+
+.carousel .button-arrow {
+    align-self: center;
+    transform: translateY(30px);
+}
+
+.node-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
 .node-card > .title {
     font-family: 'Press Start 2P', cursive;
     font-size: 25px;
-    color: #F25A70;
+    color: #62C370;
     font-weight: 400;
+    position: relative;
+}
+
+.node-card > .title::after {
+    content: '';
+    box-sizing: border-box;
+    height: 40px;
+    width:5px;
+    border-left: 5px dotted #000;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
 }
 
 .node-card > .logo {
