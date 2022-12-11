@@ -1,9 +1,11 @@
 .section-model.-about .carousel {
     margin-bottom: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
     align-items: top;
     position: relative;
+    overflow: hidden;
 }
 
 .section-model.-about .carousel::after {
@@ -29,6 +31,15 @@
 .carousel .button-arrow {
     align-self: center;
     transform: translateY(30px);
+}
+
+.carousel > .overflow-items {
+    overflow: hidden;
+}
+
+.carousel .items {
+    display: flex;
+    gap: 50px;
 }
 
 .node-card {
