@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/components/section-skills.css">
     <link rel="stylesheet" href="assets/css/components/section-projects.css">
     <link rel="stylesheet" href="assets/css/components/section-about.css">
+    <link rel="stylesheet" href="assets/css/components/section-contact.css">
+    <link rel="stylesheet" href="assets/css/components/main-footer.css">
 </head>
 
 <body>
@@ -180,19 +182,31 @@
     <section class="section-model -contact">
         <h2 class="main-title -second">Contatos</h2>
 
-        <form action="#">
-            <label for="nome" class="main-label">Nome</label>
-            <input type="text" name="nome" class="input-line">
+        <form class="contact-form" action="#">
+            <div class="form-field">
+                <label for="nome" class="description-text">Nome</label>
+                <input type="text" name="nome" class="input-line">
+            </div>
 
-            <label for="email" class="main-label">Email</label>
-            <input type="email" name="email" class="input-line">
+            <div class="form-field">
+                <label for="email" class="description-text">Email</label>
+                <input type="email" name="email" class="input-line">
+            </div>
 
-            <label for="message">Mensagem</label>
-            <textarea name="message" class="input-box" cols="30" rows="10"></textarea>
+            <div class="form-field">
+                <label for="message" class="description-text">Mensagem</label>
+                <textarea name="message" class="input-box" cols="30" rows="10"></textarea>
+            </div>
 
-            <button class="main-btn -second">Enviar</button>
+            <button class="action-link main-btn -second">Enviar</button>
         </form>
     </section>
+
+    <footer class="main-footer">
+        <a href="#" target="_blank"><img src="assets/img/icons/icon-twitter.png" alt="icon do twitter"></a>
+        <a href="#" target="_blank"><img src="assets/img/icons/icon-youtube.png" alt="icon do youtube"></a>
+        <a href="#" target="_blank"><img src="assets/img/icons/icon-discord.png" alt="icon do discord"></a>
+    </footer>
 
     <script src="assets/js/carousel.js"></script>
 </body>

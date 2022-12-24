@@ -1,0 +1,46 @@
+.section-model.-contact {
+    background-color: #3A4042;
+    border-bottom: none;
+}
+
+.contact-form {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 40px;
+}
+
+.contact-form > .form-field {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > .form-field:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+.form-field > .description-text {
+    padding-inline: 0;
+}
+
+.form-field > .input-line,
+.form-field > .input-box {
+    height: 50px;
+    border: 5px solid #000;
+}
+
+.form-field > .input-line:focus,
+.form-field > .input-box {
+    font-size: 25px;
+    padding-inline: 8px;
+}
+
+.form-field > .input-box {
+    height: 320px;
+}
+
+.contact-form > .main-btn {
+    width: 100%;
+}
